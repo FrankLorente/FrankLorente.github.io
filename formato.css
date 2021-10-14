@@ -1,3 +1,6 @@
 #grande .interior em {
-  color: red; 
-  background-color: blue;}
+  color: red;}
+#grande .azul em {
+  color: blue;}
+#grande .verde em {
+  color: green;}
