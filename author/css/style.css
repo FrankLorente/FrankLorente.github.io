@@ -182,7 +182,7 @@
   .top-banner__inner .top-banner__h2 {
     font-size: 74px;
     letter-spacing: 3px;
-    color: #fff;
+    color: red;
     font-family: "Calisto-MT-Bold"; }
     @media (max-width: 1250px) {
       .top-banner__inner .top-banner__h2 {
