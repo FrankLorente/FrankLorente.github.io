@@ -1,7 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frank Lorente Fabregat | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <header class="pixel-border">
+        <h1 class="pixel-text">>_ Frank Lorente Fabregat</h1>
+        <nav>
+            <ul class="pixel-menu">
+                <li><a href="#inicio" class="pixel-text">INICIO</a></li>
+                <li><a href="#proyectos" class="pixel-text">PROYECTOS</a></li>
+                <li><a href="#sobre-mi" class="pixel-text">SOBRE MÍ</a></li>
+                <li><a href="#contacto" class="pixel-text">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero pixel-border">
+            <div class="hero-content">
+                <h2 class="pixel-text">DISEÑADOR Y DESARROLLADOR DE VIDEOJUEGOS</h2>
+                <p class="pixel-text">Creando mundos interactivos con mecánicas innovadoras y arte memorable</p>
+                <a href="#proyectos" class="pixel-button pixel-text">VER PROYECTOS</a>
+            </div>
+            <div class="pixel-avatar">
+               <!-- <img src="assets/images/project1.png" alt="Proyecto 1" class="pixel-art"> -->
+            </div>
+        </section>
+
+        <section id="proyectos" class="pixel-border">
+            <h2 class="section-title pixel-text">>_ PROYECTOS</h2>
+            <div class="projects-grid">
+                <!-- Proyecto 1 -->
+                <div class="project-card pixel-border">
+                    <img src="assets/images/project1.png" alt="Proyecto 1" class="pixel-art">
+                    <h3 class="pixel-text">El legado del padre Cosme</h3>
+                    <p class="pixel-text">Aventura gráfica donde exploras Montán</p>
+                    <a href="https://franklorente.itch.io/el-legado-del-padre-cosme" class="pixel-button small pixel-text">DETALLES</a>
+                </div>
+                
+                <!-- Proyecto 2 -->
+                <div class="project-card pixel-border">
+                    <img src="assets/images/project2.png" alt="Proyecto 2" class="pixel-art">
+                    <h3 class="pixel-text">El Viaje de Emi</h3>
+                    <p class="pixel-text">Aventura mágica para restaurar el equilibrio emocional del Reino Serenidad</p>
+                    <a href="https://franklorente.itch.io/el-viaje-de-emi" class="pixel-button small pixel-text">DETALLES</a>
+                </div>
+                
+                <!-- Proyecto 3 -->
+                <div class="project-card pixel-border">
+                    <video width="100%" controls>
+                        <source src="assets/inquisitor.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                      </video>
+                    <h3 class="pixel-text">Inquisitor</h3>
+                    <p class="pixel-text">Plataformer, acaba con todos los enemigos</p>
+                    <a href="https://franklorente.itch.io/inquisitor" class="pixel-button small pixel-text">DETALLES</a>
+                </div>
+
+                <!-- Proyecto 4 -->
+                <div class="project-card pixel-border">
+                    <img src="assets/images/project4.png" alt="Proyecto 3" class="pixel-art">
+                    <h3 class="pixel-text">NEO CITY</h3>
+                    <p class="pixel-text">Aventura cyberpunk con múltiples finales</p>
+                    <a href="https://franklorente.itch.io/llorica-vs-petardos" class="pixel-button small pixel-text">DETALLES</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre-mi" class="pixel-border">
+            <h2 class="section-title pixel-text">>_ SOBRE MÍ</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="pixel-text">Estudiante de 4to año en el Grado de Diseño y Desarrollo de Videojuegos (UJI).</p>
+                    <p class="pixel-text">Durante mis estudios he tenido la oportunidad de trabajar en equipo, dominar múltiples disciplinas y desarrollar nuevas habilidades.</p>
+                    <!--<ul class="pixel-list pixel-text">
+                        <li>Diseño de niveles</li>
+                        <li>Mecánicas de juego</li>
+                        <li>Narrativa interactiva</li>
+                        <li>Arte pixel</li>
+                    </ul>
+                    <p class="pixel-text">Trabajo con Unity, Godot y herramientas personalizadas.</p>
+                </div>
+                <div class="skills-chart pixel-art">
+                     Esto podría ser una imagen o un canvas con gráfico pixel art -->
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="pixel-border">
+            <h2 class="section-title pixel-text">>_ CONTACTO</h2>
+            <div class="social-links">
+                <a href="https://github.com/FrankLorente" class="pixel-social pixel-text">GitHub</a>
+                <a href="https://www.linkedin.com/in/frank-lorente-fabregat/" class="pixel-social pixel-text">LinkedIn</a>
+                <a href="https://franklorente.itch.io" class="pixel-social pixel-text">Itch.io</a>
+            </div>
+        </section>
+    </main>
+    
+    <script src="js/main.js"></script>
 </body>
 </html>

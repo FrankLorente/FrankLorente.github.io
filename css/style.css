@@ -1,0 +1,315 @@
+/* Fuente pixel art */
+@font-face {
+    font-family: 'PixelFont';
+    src: url('../assets/fonts/8bitOperatorPlus8-Bold.ttf') format('truetype');
+}
+
+/* Variables de color */
+:root {
+    --primary: #6A5ACD; /* SlateBlue */
+    --secondary: #48D1CC; /* MediumTurquoise */
+    --dark: #1A1A2E;
+    --light: #F8F8FF;
+    --accent: #FF6347; /* Tomato */
+    --pixel-size: 2px;
+}
+
+/* Reset y estilos base */
+body {
+    font-family: 'PixelFont', monospace;
+    background-color: var(--dark);
+    color: var(--light);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Texto pixel art */
+.pixel-text {
+    font-family: 'PixelFont', monospace;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Bordes pixel art */
+.pixel-border {
+    border: 4px solid var(--light);
+    position: relative;
+    box-shadow: 
+        calc(var(--pixel-size) * 4) calc(var(--pixel-size) * 4) 0 var(--primary),
+        calc(var(--pixel-size) * 8) calc(var(--pixel-size) * 8) 0 var(--secondary);
+    margin-bottom: 32px;
+    background-color: rgba(26, 26, 46, 0.9);
+}
+
+.pixel-border::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
+    border: 2px solid var(--accent);
+    pointer-events: none;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--dark);
+}
+
+.pixel-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.pixel-menu a {
+    color: var(--light);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.pixel-menu a:hover {
+    color: var(--accent);
+    background-color: var(--light);
+}
+
+/* Hero section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    min-height: 70vh;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--secondary);
+}
+
+.pixel-avatar {
+    width: 300px;
+    height: 300px;
+    background-color: var(--primary);
+    image-rendering: pixelated;
+    background-size: cover;
+    border: 8px solid var(--light);
+}
+
+/* Botones */
+.pixel-button {
+    background-color: var(--accent);
+    color: var(--dark);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-family: 'PixelFont', monospace;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.pixel-button:hover {
+    background-color: var(--secondary);
+    transform: translate(-2px, -2px);
+    box-shadow: 4px 4px 0 var(--primary);
+}
+
+.pixel-button.small {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+}
+
+/* Secciones */
+section {
+    padding: 2rem;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: var(--secondary);
+    margin-bottom: 2rem;
+    border-bottom: 4px solid var(--accent);
+    display: inline-block;
+}
+
+/* Proyectos */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 
+        8px 8px 0 var(--primary),
+        16px 16px 0 var(--secondary);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    image-rendering: pixelated;
+}
+
+/* Sobre mí */
+.about-content {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.about-text {
+    flex: 2;
+}
+
+.skills-chart {
+    flex: 1;
+    min-height: 300px;
+    background-color: var(--primary);
+    image-rendering: pixelated;
+}
+
+.pixel-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.pixel-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.pixel-list li::before {
+    content: '■';
+    color: var(--accent);
+    position: absolute;
+    left: 0;
+}
+
+/* Formulario de contacto */
+.pixel-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.pixel-input {
+    width: 100%;
+    padding: 0.8rem;
+    font-family: 'PixelFont', monospace;
+    background-color: var(--dark);
+    border: 2px solid var(--light);
+    color: var(--light);
+}
+
+.pixel-input:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+textarea.pixel-input {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* Redes sociales */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.pixel-social {
+    color: var(--light);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--light);
+}
+
+.pixel-social:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+footer p.small {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+/* Efectos pixel art */
+.pixel-art {
+    image-rendering: pixelated;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-content {
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+    
+    .about-content {
+        flex-direction: column;
+    }
+    
+    .social-links {
+        flex-wrap: wrap;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Estilo  botón */
+  a.pixel-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--accent);
+    color: var(--dark);
+    padding: 0.8rem 1.5rem;
+    border: none;
+    font-family: 'PixelFont', monospace;
+    cursor: pointer;
+  }
