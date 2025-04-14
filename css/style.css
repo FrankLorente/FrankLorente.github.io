@@ -1,7 +1,7 @@
 /* Fuente pixel art */
 @font-face {
     font-family: 'PixelFont';
-    src: url('../assets/fonts/8bitOperatorPlus8-Bold.ttf') format('truetype');
+    src: url('../assets/fonts/Pixeled.ttf') format('truetype');
 }
 
 /* Variables de color */
@@ -100,10 +100,10 @@ header {
 }
 
 .pixel-avatar {
-    width: 300px;
-    height: 300px;
+    display: inline-block;
+    width: 500px;
+    height: auto;
     background-color: var(--primary);
-    image-rendering: pixelated;
     background-size: cover;
     border: 8px solid var(--light);
 }
